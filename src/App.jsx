@@ -10,7 +10,7 @@ import contact from "./assets/contact.png";
 function App() {
   return (
     <div className="WrapperContent">
-      <div class="Header" className="header">
+      <div class="Header" className="header p-2">
         <a href="#About">À Propos</a>
         <a href="#Projets">Projets</a>
         <a href="#ExperienceProfesionnel">Expérience Professionnel</a>
@@ -86,7 +86,7 @@ function App() {
         </div>
       </div>
 
-      <div id="Contact-me" className="position">
+      <div id="Contact-me" className="position pt-4">
         <form method="post" action="#Contact-me">
           <p className="Strong">Contactez-moi</p>
           <div className="Name">
