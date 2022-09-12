@@ -6,6 +6,47 @@
   color: black;
 }
 
+/* Image */
+
+.Tls {
+  background-image: url("./assets/ProjetTLS.png");
+}
+
+.Myrhmica {
+  background-image: url("./assets/Myrhmica.png");
+}
+
+/* Wrapper */
+
+.WrapperTop {
+  padding: 30px;
+}
+
+.WrapperProjets,
+.WrapperExpPro {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.WrapperBox {
+  width: 400px;
+  height: 250px;
+}
+
+.Footer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* Text */
+
+.SubTitle {
+  padding: 20px;
+}
+
 input {
   width: 120px;
 }
@@ -68,26 +109,6 @@ input {
   justify-content: space-around;
   align-items: center;
   color: #18a0fb;
-}
-
-.WrapperProjets,
-.WrapperExpPro {
-  padding: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-.Image {
-  width: 100%;
-  height: 100%;
-  margin-bottom: 5px;
-}
-
-.WrapperBox {
-  width: 400px;
-  height: 250px;
 }
 
 .Plus {
@@ -188,17 +209,8 @@ form {
   padding-left: 15px;
 }
 
-.Footer {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-}
-
 .Line {
-  width: 400px;
   height: 1px;
-  background-color: black;
-  margin-bottom: 10px;
 }
 
 .logo {
