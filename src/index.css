@@ -35,27 +35,10 @@
   height: 250px;
 }
 
-.Footer {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-}
-
 /* Text */
-
-.SubTitle {
-  padding: 20px;
-}
 
 input {
   width: 120px;
-}
-
-.positionBox {
-  display: flex;
-  flex-direction: column;
-  padding-right: 5px;
-  display: none;
 }
 
 .Box {
@@ -65,50 +48,6 @@ input {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.Title {
-  font-size: 30px;
-  padding: 15px;
-  padding-left: 50px;
-}
-
-.apropos {
-  font-weight: bold;
-  font-size: 23px;
-  padding: 15px;
-}
-
-.Strong {
-  font-weight: bold;
-  font-size: 23px;
-}
-
-.Bfont {
-  font-size: 30px;
-}
-
-.Mfont {
-  font-size: 26px;
-}
-
-.MfontTitle {
-  font-size: 26px;
-  padding-left: 10px;
-  padding-top: 20px;
-}
-
-.Sfont {
-  font-size: 20px;
-  text-justify: auto;
-}
-
-.header {
-  height: 60px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  color: #18a0fb;
 }
 
 .Plus {
@@ -193,28 +132,4 @@ form {
 .Submit:hover {
   background-color: #18a0fb;
   color: white;
-}
-
-.block {
-  width: 200px;
-  margin: 20px;
-  padding: 5px;
-  border: 1px solid #00000080;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.Text {
-  padding-left: 15px;
-}
-
-.Line {
-  height: 1px;
-}
-
-.logo {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
 }
