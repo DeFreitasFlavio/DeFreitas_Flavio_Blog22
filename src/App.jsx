@@ -14,34 +14,49 @@ import ExpPro from "./assets/mallette.png";
 import contact from "./assets/contact.png";
 
 function App() {
-  const nav = document.querySelector(".box");
   window.addEventListener("scroll", () => {
-    console.log(nav);
     if (window.scrollY > 300) {
-      nav.classList.add("scroll");
+      box1.classList.add("scroll");
+      box2.classList.add("scroll");
+      box3.classList.add("scroll");
+      box4.classList.add("scroll");
     }
     if (window.scrollY < 300) {
-      nav.classList.remove("scroll");
+      box1.classList.remove("scroll");
+      box2.classList.remove("scroll");
+      box3.classList.remove("scroll");
+      box4.classList.remove("scroll");
     }
   });
   return (
     <div className="WrapperContent">
       <Header />
-      <div
-        id="positionBox"
-        className="box opacity-0 fixed left-0 bottom-1/2 transition ease-in-out delay-90"
-      >
-        <div className="Box rounded-tr-lg">
-          <img src={info} />
+      <div className="position: fixed left-0 bottom-1/2">
+        <div
+          id="box1"
+          className="Box rounded-tr-lg transition ease-in-out delay-75"
+        >
+          <a href="#About">
+            <img src={info} />
+          </a>
         </div>
-        <div className="Box">
-          <img src={projet} />
+        <div id="box2" className="Box transition ease-in-out delay-75">
+          <a href="#Projets">
+            <img src={projet} />
+          </a>
         </div>
-        <div className="Box">
-          <img src={ExpPro} />
+        <div id="box3" className="Box transition ease-in-out delay-100">
+          <a href="#ExperienceProfesionnel">
+            <img src={ExpPro} />
+          </a>
         </div>
-        <div className="Box rounded-br-lg">
-          <img src={contact} />
+        <div
+          id="box4"
+          className="Box rounded-br-lg transition ease-in-out delay-100"
+        >
+          <a href="#Contact-me">
+            <img src={contact} />
+          </a>
         </div>
       </div>
 

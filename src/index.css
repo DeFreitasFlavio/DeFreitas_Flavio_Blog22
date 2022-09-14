@@ -41,15 +41,6 @@ input {
   width: 120px;
 }
 
-.Box {
-  width: 40px;
-  height: 40px;
-  border: 1px solid #18a0fb;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .Plus {
   width: 130px;
   height: 30px;
@@ -134,6 +125,16 @@ form {
   color: white;
 }
 
-.box.scroll {
+.Box {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #18a0fb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+}
+
+.scroll {
   opacity: 1;
 }
