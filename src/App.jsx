@@ -20,40 +20,36 @@ function App() {
       box2.classList.add("scroll");
       box3.classList.add("scroll");
       box4.classList.add("scroll");
+      box.classList.add("box");
     }
     if (window.scrollY < 300) {
       box1.classList.remove("scroll");
       box2.classList.remove("scroll");
       box3.classList.remove("scroll");
       box4.classList.remove("scroll");
+      box.classList.remove("box");
     }
   });
   return (
     <div className="WrapperContent">
       <Header />
-      <div className="position: fixed left-0 bottom-1/2">
-        <div
-          id="box1"
-          className="Box rounded-tr-lg transition ease-in-out delay-75"
-        >
+      <div id="box" className="position: fixed Left bottom-1/2">
+        <div id="box1" className="Box rounded-tr-lg">
           <a href="#About">
             <img src={info} />
           </a>
         </div>
-        <div id="box2" className="Box transition ease-in-out delay-75">
+        <div id="box2" className="Box">
           <a href="#Projets">
             <img src={projet} />
           </a>
         </div>
-        <div id="box3" className="Box transition ease-in-out delay-100">
+        <div id="box3" className="Box">
           <a href="#ExperienceProfesionnel">
             <img src={ExpPro} />
           </a>
         </div>
-        <div
-          id="box4"
-          className="Box rounded-br-lg transition ease-in-out delay-100"
-        >
+        <div id="box4" className="Box rounded-br-lg">
           <a href="#Contact-me">
             <img src={contact} />
           </a>
@@ -76,10 +72,10 @@ function App() {
           Projets
         </h2>
       </div>
-      <div className="w-full flex justify-center items-center">
-        <div className="WrapperBox Tls bg-no-repeat bg-contain bg-left mr-6"></div>
+      <div className="w-full flex justify-center items-center xs:flex-col">
+        <div className="WrapperBox Tls bg-no-repeat bg-contain bg-left mr-6 xs:mr-0"></div>
 
-        <div className="w-1/3 flex flex-col">
+        <div className="w-1/3 flex flex-col xs:w-3/4">
           <p className="text-Subtitle font-Strong">
             The Last Survivor on the space
           </p>
@@ -97,10 +93,10 @@ function App() {
           Experience Profesionnel
         </h2>
       </div>
-      <div className="w-full flex justify-center items-center pb-6">
-        <div className="WrapperBox Myrhmica w-full h-full bg-no-repeat bg-contain bg-left mr-6"></div>
+      <div className="w-full flex justify-center items-center pb-6 xs:flex-col">
+        <div className="WrapperBox Myrhmica w-full h-full bg-no-repeat bg-contain bg-left mr-6 xs:mr-0"></div>
 
-        <div className="w-1/3 flex flex-col">
+        <div className="w-1/3 flex flex-col xs:w-3/4">
           <p className="text-Subtitle font-Strong">PortraiScopie</p>
           <p className="text-Text break-normal pt-4">
             Lorem Ipsum is simply dummy text of the printing and typesetting

@@ -15,13 +15,14 @@ module.exports = {
         Subtitle: "26px",
         Text: "20px",
         Form: "16px",
+        Phone: "16px",
       },
       fontWeight: {
         Strong: "bold",
       },
     },
     screens: {
-      xs: "480px",
+      xs: { max: "480px" },
       ss: "620px",
       sm: "768px",
       md: "1060px",
