@@ -14,13 +14,14 @@ import ExpPro from "./assets/mallette.png";
 import contact from "./assets/contact.png";
 
 function App() {
-  const nav = document.querySelector("#positionBox");
+  const nav = document.querySelector(".box");
   window.addEventListener("scroll", () => {
+    console.log(nav);
     if (window.scrollY > 300) {
-      nav.style.opacity = "1";
+      nav.classList.add("scroll");
     }
     if (window.scrollY < 300) {
-      nav.style.opacity = "0";
+      nav.classList.remove("scroll");
     }
   });
   return (
@@ -28,9 +29,9 @@ function App() {
       <Header />
       <div
         id="positionBox"
-        className="opacity-0 fixed left-0 bottom-1/2 transition ease-in-out delay-90"
+        className="box opacity-0 fixed left-0 bottom-1/2 transition ease-in-out delay-90"
       >
-        <div id="box" className="Box rounded-tr-lg">
+        <div className="Box rounded-tr-lg">
           <img src={info} />
         </div>
         <div className="Box">
@@ -101,12 +102,7 @@ function App() {
         <form method="post" action="#Contact-me">
           <p className="font-Strong text-Text">Contactez-moi</p>
           <div className="Name">
-            <input
-              type="text"
-              name="user_name"
-              placeholder="Nom Prenom"
-              className="placeholder-slate-400"
-            />
+            <input type="text" name="user_name" placeholder="Nom Prenom" />
           </div>
           <div className="Company">
             <input type="text" name="Company" placeholder="Entreprise" />

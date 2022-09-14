@@ -2,10 +2,7 @@ import React from "react";
 
 function Header() {
   return (
-    <div
-      class="Header"
-      className="text-Blue w-full h-14 flex justify-around items-center text-Text"
-    >
+    <div className="text-Blue w-full h-14 flex justify-around items-center text-Text">
       <a href="#About" className="p-2">
         À Propos
       </a>
