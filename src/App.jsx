@@ -117,16 +117,36 @@ function App() {
         <form method="post" action="#Contact-me">
           <p className="font-Strong text-Text">Contactez-moi</p>
           <div className="Name">
-            <input type="text" name="user_name" placeholder="Nom Prenom" />
+            <input
+              type="text"
+              name="user_name"
+              placeholder="Nom Prenom"
+              className="w-full"
+            />
           </div>
           <div className="Company">
-            <input type="text" name="Company" placeholder="Entreprise" />
+            <input
+              type="text"
+              name="Company"
+              placeholder="Entreprise"
+              className="w-full"
+            />
           </div>
           <div className="Email">
-            <input type="text" name="Email" placeholder="Adresse Mail" />
+            <input
+              type="text"
+              name="Email"
+              placeholder="Adresse Mail"
+              className="w-full"
+            />
           </div>
           <div className="Message">
-            <input type="text" name="Message" placeholder="Message" />
+            <input
+              type="text"
+              name="Message"
+              placeholder="Message"
+              className="w-full"
+            />
           </div>
           <input className="Submit" type="submit" placeholder="Envoyez" />
         </form>
