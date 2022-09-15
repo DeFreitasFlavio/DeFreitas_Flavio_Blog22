@@ -30,8 +30,43 @@ function App() {
       box.classList.remove("box");
     }
   });
+  let LookBoolean = false;
+
+  function Look() {
+    if (LookBoolean == false) {
+      document.addEventListener("click", () => {
+        Block.classList.add("Look");
+      });
+      console.log("enable");
+      LookBoolean = true;
+    } else if (LookBoolean == true) {
+      document.addEventListener("click", () => {
+        Block.classList.remove("Look");
+      });
+      console.log(LookBoolean);
+      LookBoolean = false;
+    }
+  }
+  let LookBoolean1 = false;
+
+  function Look1() {
+    if (LookBoolean1 == false) {
+      document.addEventListener("click", () => {
+        Block1.classList.add("Look");
+      });
+      console.log("enable");
+      LookBoolean1 = true;
+    } else if (LookBoolean1 == true) {
+      document.addEventListener("click", () => {
+        Block1.classList.remove("Look");
+      });
+      console.log(LookBoolean1);
+      LookBoolean1 = false;
+    }
+  }
+
   return (
-    <div className="WrapperContent">
+    <div className="w-full h-full">
       <Header />
       <div id="box" className="position: fixed Left bottom-1/2">
         <div id="box1" className="Box rounded-tr-lg">
@@ -72,18 +107,37 @@ function App() {
           Projets
         </h2>
       </div>
-      <div className="w-full flex justify-center items-center xs:flex-col">
-        <div className="WrapperBox Tls bg-no-repeat bg-contain bg-left mr-6 xs:mr-0"></div>
 
-        <div className="w-1/3 flex flex-col xs:w-3/4">
+      <div className="w-full flex justify-center items-center xs:flex-col">
+        <div className="w-96 h-64 Tls bg-no-repeat bg-contain bg-left mr-6 xs:mr-0"></div>
+
+        <div className="w-1/3 h-full flex flex-col xs:w-3/4">
           <p className="text-Subtitle font-Strong">
             The Last Survivor on the space
           </p>
           <p className="text-Text break-normal pt-4">
-            Shoot'em up d'alien, top-down shooter blabla
+            Shoot'em up d'alien, top-down shooter, crée avec GameMaker Studio 2
           </p>
           <div className="flex justify-end">
-            <button className="Plus">En savoir plus</button>
+            <input
+              type="button"
+              onClick={Look}
+              value="En savoir plus"
+              className="Plus"
+            />
+          </div>
+          <div onClick={Look} id="Block" className="Blur w-full">
+            <div className="rounded-2xl bg-white  w-2/4 h-2/4 px-4">
+              <div className="pr-32 flex items-end justify-around flex-row">
+                <div className="w-96 h-60 Tls bg-no-repeat bg-contain bg-left "></div>
+                <p className="text-Subtitle font-Strong ">
+                  The Last Survivor on the space
+                </p>
+              </div>
+              <p className="text-Text break-normal pt-4">
+                Shoot'em up d'alien, top-down shooter blabla
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -104,7 +158,25 @@ function App() {
             ever since the 1500s, when an unknown printer took a galley of type
           </p>
           <div className="flex justify-end">
-            <button className="Plus">En savoir plus</button>
+            <input
+              type="button"
+              onClick={Look1}
+              value="En savoir plus"
+              className="Plus"
+            />
+          </div>
+          <div onClick={Look1} id="Block1" className="Blur w-full">
+            <div className="rounded-2xl bg-white  w-2/4 h-2/4 px-4">
+              <div className="pr-32 flex items-end justify-around flex-row">
+                <div className="w-96 h-60 Tls bg-no-repeat bg-contain bg-left "></div>
+                <p className="text-Subtitle font-Strong ">
+                  The Last Survivor on the space
+                </p>
+              </div>
+              <p className="text-Text break-normal pt-4">
+                Shoot'em up d'alien, top-down shooter blabla
+              </p>
+            </div>
           </div>
         </div>
       </div>
