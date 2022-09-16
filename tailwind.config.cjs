@@ -20,6 +20,9 @@ module.exports = {
       fontWeight: {
         Strong: "bold",
       },
+      gridTemplateColumns: {
+        Block: "repeat(4, 21%)",
+      },
     },
     screens: {
       xs: { max: "480px" },
