@@ -140,7 +140,7 @@ function App() {
                 lire. Il y avait des problèmes que nous n'avions pas prévu donc
                 certain fois le timing était serré mais tout ce finissais plutôt
                 bien.
-                <li>Maquette Figma</li>
+                <li className="pt-1">Maquette Figma</li>
                 <li>Elements Css</li>
                 <li>Fonction Javascript</li>
                 <li>Compréhension du framework NextJs</li>
