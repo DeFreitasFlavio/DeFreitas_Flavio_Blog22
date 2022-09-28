@@ -4,32 +4,13 @@ import React from "react";
 
 import Header from "./components/Header";
 import Footers from "./components/Footer";
+import Boxs from "./components/Boxs";
 
 // Image
 
 import Tel from "./assets/telephone.png";
-import info from "./assets/info.png";
-import projet from "./assets/projet.png";
-import ExpPro from "./assets/mallette.png";
-import contact from "./assets/contact.png";
 
 function App() {
-  window.addEventListener("scroll", () => {
-    if (window.scrollY > 300) {
-      box1.classList.add("scroll");
-      box2.classList.add("scroll");
-      box3.classList.add("scroll");
-      box4.classList.add("scroll");
-      box.classList.add("box");
-    }
-    if (window.scrollY < 300) {
-      box1.classList.remove("scroll");
-      box2.classList.remove("scroll");
-      box3.classList.remove("scroll");
-      box4.classList.remove("scroll");
-      box.classList.remove("box");
-    }
-  });
   let LookBoolean = false;
 
   function Look() {
@@ -68,29 +49,7 @@ function App() {
   return (
     <div className="w-full h-full">
       <Header />
-      <div id="box" className="position: fixed Left bottom-1/2">
-        <div id="box1" className="Box rounded-tr-lg">
-          <a href="#About">
-            <img src={info} />
-          </a>
-        </div>
-        <div id="box2" className="Box">
-          <a href="#Projets">
-            <img src={projet} />
-          </a>
-        </div>
-        <div id="box3" className="Box">
-          <a href="#ExperienceProfesionnel">
-            <img src={ExpPro} />
-          </a>
-        </div>
-        <div id="box4" className="Box rounded-br-lg">
-          <a href="#Contact-me">
-            <img src={contact} />
-          </a>
-        </div>
-      </div>
-
+      <Boxs />
       <div id="About" className="p-8">
         <h1 className="text-Title p-4 pl-10">De Freitas Flavio</h1>
         <h2 className="text-Subtitle font-Strong pl-4">À propos</h2>
@@ -153,9 +112,10 @@ function App() {
         <div className="w-1/3 flex flex-col xs:w-3/4">
           <p className="text-Subtitle font-Strong">PortraiScopie</p>
           <p className="text-Text break-normal pt-4">
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s, when an unknown printer took a galley of type
+            PortraiScopie est une nouvelle approche de l'entré dans le monde du
+            travail ou de la reconversion, il apporte une nouvelle vision du CV
+            ou plutôt une recentralisation des compétence qu'on pense vraiment
+            avoir.
           </p>
           <div className="flex justify-end">
             <input
@@ -173,8 +133,17 @@ function App() {
                   PortraiScopie
                 </p>
               </div>
-              <p className="text-Text break-normal pt-4">
-                Shoot'em up d'alien, top-down shooter blabla
+              <p className="text-Text break-normal pt-2 pl-4">
+                Pour moi cette expérience était un vrai défi de très grande
+                taille car je n'avais pas beaucoup d’expérience, et il y avait
+                énormément de choses a faire et surtout beaucoup de docs a allez
+                lire. Il y avait des problèmes que nous n'avions pas prévu donc
+                certain fois le timing était serré mais tout ce finissais plutôt
+                bien.
+                <li>Maquette Figma</li>
+                <li>Elements Css</li>
+                <li>Fonction Javascript</li>
+                <li>Compréhension du framework NextJs</li>
               </p>
             </div>
           </div>
