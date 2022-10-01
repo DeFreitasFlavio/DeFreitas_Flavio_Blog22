@@ -94,7 +94,7 @@ function App() {
                 </p>
               </div>
               <p className="text-Text break-normal pt-4">
-                Shoot'em up d'alien, top-down shooter blabla
+                Shoot'em up d'alien, top-down shooter blabla TEST
               </p>
             </div>
           </div>
