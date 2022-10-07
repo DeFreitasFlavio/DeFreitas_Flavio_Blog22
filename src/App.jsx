@@ -86,16 +86,14 @@ function App() {
             />
           </div>
           <div onClick={Look} id="Block" className="Blur">
-            <div className="rounded-2xl bg-white  w-2/4 h-2/4 px-4">
-              <div className="pr-32 flex items-end justify-around flex-row">
-                <div className="w-96 h-60 Tls bg-no-repeat bg-contain bg-left "></div>
+            <div className="rounded-2xl bg-white  w-2/4 h-2/4 px-4 xs:w-3/4">
+              <div className="w-5/6 flex  items-end justify-around flex-row xs:flex-col xs:pr-0 xs:items-center">
+                <div className="w-96 h-60 Tls bg-no-repeat bg-contain bg-left  xs:w-72"></div>
                 <p className="text-Subtitle font-Strong ">
                   The Last Survivor on the space
                 </p>
               </div>
-              <p className="text-Text break-normal pt-4">
-                Shoot'em up d'alien, top-down shooter blabla TEST
-              </p>
+              <p className="text-Text break-normal pt-4 pl-4"></p>
             </div>
           </div>
         </div>
@@ -126,14 +124,12 @@ function App() {
             />
           </div>
           <div onClick={Look1} id="Block1" className="Blur">
-            <div className="rounded-2xl bg-white  w-2/4 h-2/4 px-6">
-              <div className="grid grid-cols-Block grid-rows-1">
-                <div className="w-96 h-60 Myrhmica bg-no-repeat bg-contain bg-left col-start-1"></div>
-                <p className="text-Subtitle font-Strong col-start-3 place-self-end pb-2.5">
-                  PortraiScopie
-                </p>
+            <div className="rounded-2xl bg-white  w-2/4 h-2/4 px-4 xs:w-3/4">
+              <div className="w-4/6 flex  items-end justify-around flex-row xs:flex-col xs:w-full xs:items-center">
+                <div className="w-96 h-60 Myrhmica bg-no-repeat bg-contain bg-left xs:w-72"></div>
+                <p className="text-Subtitle font-Strong">PortraiScopie</p>
               </div>
-              <p className="text-Text break-normal pt-2 pl-4">
+              <p className="text-Text break-normal pt-2 pl-4 xs:text-Phone">
                 Pour moi cette expérience était un vrai défi de très grande
                 taille car je n'avais pas beaucoup d’expérience, et il y avait
                 énormément de choses a faire et surtout beaucoup de docs a allez
