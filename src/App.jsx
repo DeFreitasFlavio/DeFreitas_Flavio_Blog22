@@ -124,10 +124,12 @@ function App() {
             />
           </div>
           <div onClick={Look1} id="Block1" className="Blur">
-            <div className="rounded-2xl bg-white  w-2/4 h-2/4 px-4 xs:w-3/4">
+            <div className="rounded-2xl bg-white  w-2/4 h-2/4 px-4 xs:w-3/4 xs:h-3/4">
               <div className="w-4/6 flex  items-end justify-around flex-row xs:flex-col xs:w-full xs:items-center">
-                <div className="w-96 h-60 Myrhmica bg-no-repeat bg-contain bg-left xs:w-72"></div>
-                <p className="text-Subtitle font-Strong">PortraiScopie</p>
+                <div className="w-96 h-60 Myrhmica bg-no-repeat bg-contain bg-left xs:w-72 xs:h-52"></div>
+                <p className="text-Subtitle font-Strong xs: text-Text">
+                  PortraiScopie
+                </p>
               </div>
               <p className="text-Text break-normal pt-2 pl-4 xs:text-Phone">
                 Pour moi cette expérience était un vrai défi de très grande
