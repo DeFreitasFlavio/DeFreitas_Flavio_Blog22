@@ -50,7 +50,7 @@ function App() {
     <div className="w-full h-full">
       <Header />
       <Boxs />
-      <div id="About" className="p-8">
+      <div id="About" className="p-8 H">
         <h1 className="text-Title p-4 pl-10">De Freitas Flavio</h1>
         <h2 className="text-Subtitle font-Strong pl-4">À propos</h2>
         <p className="text-Text p-4 ss:w-3/4">

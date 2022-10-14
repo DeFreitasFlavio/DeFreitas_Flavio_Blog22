@@ -27,6 +27,12 @@ input {
 }
 
 /* Wrapper */
+.H {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 
 .WrapperTop {
   padding: 30px;
