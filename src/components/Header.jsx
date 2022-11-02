@@ -2,14 +2,17 @@ import React from "react";
 
 function Header() {
   return (
-    <div className="text-Blue w-full h-14 flex justify-around items-center text-Text xs:text-Phone">
+    <div className="text-Blue font-medium w-full h-14 flex justify-around items-center text-Text xs:text-Phone">
       <a href="#About" className="p-2 hover:underline">
         À Propos
       </a>
       <a href="#Projets" className="p-2 hover:underline">
         Projets
       </a>
-      <a href="#ExperienceProfesionnel" className="p-2 hover:underline">
+      <a
+        href="#ExperienceProfesionnel"
+        className="p-2 hover:underline max-w-max"
+      >
         Expérience Professionnel
       </a>
       <a href="#Contact-me" className="p-2 hover:underline">

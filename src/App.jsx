@@ -47,18 +47,27 @@ function App() {
   }
 
   return (
-    <div className="w-full h-full">
+    <div className="w-full h-full font-propre">
       <Header />
       <Boxs />
-      <div id="About" className="p-8 H">
-        <h1 className="text-Title p-4 pl-10">De Freitas Flavio</h1>
-        <h2 className="text-Subtitle font-Strong pl-4">À propos</h2>
-        <p className="text-Text p-4 ss:w-3/4">
-          J’ai 19 ans je suis étudiant en bachelor 3 informatique spécialisation
-          Développeur Web à Bordeaux Ynov Campus, je suis passionné de nouvelles
-          technologies, de science et d'espace, doté d’une grande curiosité et
-          de motivation, en quête de nouveaux challenges
-        </p>
+      <div
+        id="About"
+        className="p-8 H w-full flex-col flex justify-center items-center"
+      >
+        <div className="w-3/4">
+          <p classname="text-Form leading-none">Bonjour, je m'appelle</p>
+          <h1 className="text-Title font-bold leading-none text-Blue">
+            De Freitas Flavio
+          </h1>
+          <h2 className="text-Subtitle font-semibold pt-4 ">À propos</h2>
+          <p className="text-Text pt-4 ">
+            J’ai 19 ans je suis étudiant en bachelor 3 informatique
+            spécialisation Développeur Web à Bordeaux Ynov Campus, je suis
+            passionné de nouvelles technologies, de science et d'espace, doté
+            d’une grande curiosité et de motivation, en quête de nouveaux
+            challenges
+          </p>
+        </div>
       </div>
 
       <div className="p-10">

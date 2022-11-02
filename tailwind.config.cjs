@@ -9,6 +9,7 @@ module.exports = {
       },
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],
+        propre: ["Montserrat", "sans-serif"],
       },
       fontSize: {
         Title: "30px",
@@ -16,9 +17,6 @@ module.exports = {
         Text: "20px",
         Form: "16px",
         Phone: "16px",
-      },
-      fontWeight: {
-        Strong: "bold",
       },
       gridTemplateColumns: {
         Block: "repeat(4, 21%)",
