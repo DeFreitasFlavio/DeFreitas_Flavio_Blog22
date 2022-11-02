@@ -48,6 +48,9 @@ input {
   height: 250px;
 }
 
+ExpPro {
+  max-width: 150px;
+}
 /* Text */
 
 input {
