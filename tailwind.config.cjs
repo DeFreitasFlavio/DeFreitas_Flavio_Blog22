@@ -16,7 +16,7 @@ module.exports = {
         Subtitle: "26px",
         Text: "20px",
         Form: "16px",
-        Phone: "16px",
+        Phone: "14px",
       },
       gridTemplateColumns: {
         Block: "repeat(4, 21%)",

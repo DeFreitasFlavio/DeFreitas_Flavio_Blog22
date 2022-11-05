@@ -9,7 +9,7 @@ function Header() {
       <a href="#Projets" className="p-2 hover:underline">
         Projets
       </a>
-      <a href="#ExperienceProfesionnel" className="p-2 hover:underline w-24">
+      <a href="#ExperienceProfesionnel" className="p-2 hover:underline xs:w-24">
         Expérience Professionnel
       </a>
       <a href="#Contact-me" className="p-2 hover:underline">
