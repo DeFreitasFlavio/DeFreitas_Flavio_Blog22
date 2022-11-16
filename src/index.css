@@ -10,6 +10,7 @@ html,
 body {
   height: 100%;
   margin: 0px;
+  scroll-behavior: smooth;
 }
 
 input {
@@ -195,4 +196,9 @@ form {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+section {
+  transition: all 0.5s ease-in-out;
+  scroll-behavior: smooth;
 }

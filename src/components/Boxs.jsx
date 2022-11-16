@@ -6,6 +6,28 @@ import ExpPro from "../assets/mallette.png";
 import contact from "../assets/contact.png";
 
 function Boxs() {
+  const navlinks = [...document.querySelectorAll("div a")];
+  const sections = [...document.querySelectorAll("section")];
+
+  let sectionsPosition;
+  function positionCalculation() {
+    sectionsPosition = sections.map((section) => {
+      return section.offsetTop;
+    });
+  }
+  positionCalculation();
+  navlinks.forEach((link) => link.addEventListener("click", addScrollSmooth));
+
+  function addScrollSmooth(e) {
+    const linkIndex = navlinks.indexOf(e.target);
+    window.scrollTo({
+      top: sectionsPosition[linkIndex],
+      behavior: "smooth",
+    });
+  }
+
+  window.addEventListener("resize", positionCalculation);
+
   window.addEventListener("scroll", () => {
     if (window.scrollY > 300) {
       box1.classList.add("scroll");
