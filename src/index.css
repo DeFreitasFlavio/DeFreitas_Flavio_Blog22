@@ -19,6 +19,10 @@ input {
 
 /* Image */
 
+.Tetris {
+  background-image: url("./assets/tetris.jpg");
+}
+
 .Tls {
   background-image: url("./assets/ProjetTLS.png");
 }
